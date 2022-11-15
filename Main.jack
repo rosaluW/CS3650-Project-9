@@ -1,0 +1,42 @@
+class Main {
+  function void main() {
+    var int choice;
+    var int num;
+    var int width;
+    var int area;
+
+    do Output.printString("Which of the following shape do you want to calculate the area of? ");
+    do Output.println();
+    do Output.printString("1. Square ");
+    do Output.printString("2. Rectangle ");
+    do Output.printString("3. Circle");
+    do Output.println();
+
+    let choice = Keyboard.readInt("Enter number choice: ");
+    do Output.println();
+
+    if (choice = 1) {
+      let num = Keyboard.readInt("Enter length of the square: ");
+      do Output.println();
+      do Output.printString("The area of the square is: ");
+      do Output.printInt(num * num);
+    }
+
+    if (choice = 2) {
+      let num = Keyboard.readInt("Enter length of the rectangle: ");
+      let width = Keyboard.readInt("Enter width of the rectangle: ");
+      do Output.println();
+      do Output.printString("The area of the rectangle is: ");
+      do Output.printInt(num * width);
+    }
+
+    if (choice = 3) {
+      let num = Keyboard.readInt("Enter radius of the circle: ");
+      do Output.println();
+      do Output.printString("The area of the circle is: ");
+      do Output.printInt(num * num * 3.14);
+    }
+
+    return;
+  }
+}
